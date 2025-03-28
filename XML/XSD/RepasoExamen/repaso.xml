@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="repaso.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+
+<cinematografia>
+    <peliculas>
+        <actores>A</actores>
+        <duracion>120</duracion>
+        <descripcion>Hola</descripcion>
+        <premios>oscar</premios>
+    </peliculas>
+    
+    <peliculas>
+        <actores>B</actores>
+        <descripcion>Holis</descripcion>
+        <condecoraciones></condecoraciones>
+    </peliculas>
+   
+    <series>
+    
+    </series>
+
+
+</cinematografia>

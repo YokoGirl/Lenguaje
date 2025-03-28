@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="factura.xsd" type="application/xml" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<factura id="F123_2025" fecha="2025-03-10">
+    <cliente>
+        <nombre>Juan Pérez</nombre>
+        <direccion>
+            <calle>Av. Principal</calle>
+            <numero>123</numero>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+    </cliente>
+    <productos>
+        <producto codigo="P001">
+            <nombre>Teclado</nombre>
+            <precio>29.99</precio>
+        </producto>
+        <producto codigo="P002">
+            <nombre>Raton</nombre>
+            <precio>19.99</precio>
+        </producto>
+    </productos>
+    <metodoPago tipo="tarjeta">MasterCard</metodoPago>
+</factura>

@@ -1,0 +1,6 @@
+URL Segura --> /https:\/\/\D{2,}\.[a-z]{2,4}
+Correo Electrónico -->  [a-z | \d]+@+[a-z]+\.[a-z]{2,4}
+
+Código -->[a-z 0-9]+ {3, }
+    - Que empiece y acabe por vocal 
+    - 3 dígitos una “_” y 3 a 7 no dígitos. 

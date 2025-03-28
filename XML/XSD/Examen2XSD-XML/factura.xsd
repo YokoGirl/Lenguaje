@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="factura">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="cliente" maxOccurs="1">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre"></xs:element>
+                            <xs:element name="direccion" minOccurs="1" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="calle" type="cadTexto"></xs:element>
+                                        <xs:element name="numero" type="xs:int"></xs:element>
+                                        <xs:element name="ciudad" type="cadTexto"></xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="productos" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="producto" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="nombre" type="cadTexto" minOccurs="1"></xs:element>
+                                        <xs:element name="precio" type="restPrecio" minOccurs="1"></xs:element>
+                                        <xs:element name="descripcion" minOccurs="0"></xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="codigo" type="restCodProduc"></xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="metodoPago">
+                    <xs:complexType>
+                        <xs:simpleContent>
+                            <xs:extension base="xs:string">
+                                <xs:attribute name="tipo" type="restMetPag"></xs:attribute>
+                            </xs:extension>
+                        </xs:simpleContent>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="id" type="restIdFac"></xs:attribute>
+            <xs:attribute name="fecha" type="restFecha"></xs:attribute>
+        </xs:complexType>
+    </xs:element>
+
+
+    <!-- RESTRICCIONES -->
+    <xs:simpleType name="restIdFac">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="F\d[0-9]{1,}_[0-9]{4}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="restMetPag">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="tarjeta"></xs:enumeration>
+            <xs:enumeration value="transferencia"></xs:enumeration>
+            <xs:enumeration value="efetivo"></xs:enumeration>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="restFecha">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{4}-[0-9]{2}-[0-9]{2}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="restCodProduc">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="P[0-9]{3}"></xs:pattern>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="maxLen">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50"></xs:maxLength>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="cadTexto">
+        <xs:restriction base="maxLen">
+            <xs:minLength value="5"></xs:minLength>
+        </xs:restriction>
+    </xs:simpleType>
+
+
+    <xs:simpleType name="precio">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0"></xs:minInclusive>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="restPrecio">
+        <xs:restriction base="precio">
+            <xs:fractionDigits value="2"></xs:fractionDigits>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

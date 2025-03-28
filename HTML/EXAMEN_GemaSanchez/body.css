@@ -1,0 +1,84 @@
+body {
+    width: 100%;
+    margin: 0;#ffffff;
+    background-color: white;
+    height: 100%;
+}
+
+/*Cabecera*/
+div#cabecera {
+    background-color: black;
+    text-align: center;
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#cabecera img.logo {
+    padding: 10px;
+}
+
+/*MENÚ*/
+
+#lista {
+    padding: 20px;
+    display: block;
+    background-color: grey;
+    text-align: center;
+    height: 30px;
+}
+
+/*BODY*/
+#cuerpo {
+    margin-left: 25%;
+    margin-right: 20%;
+    width: 800px;
+}
+
+.titular {
+    text-align: center;
+}
+
+div#cartas {
+    float: left;
+    border: 1px dotted black;
+    margin: 20px;
+    padding: 20px;
+    height: 300px;
+    font-weight: 100px;
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+.estrella {
+    width: 130px;
+    float: left;
+    margin-right: 5px;
+}
+
+.titulo {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+.texto {
+    margin: 20px;
+    font-weight: 100px;
+}
+
+/*FOOTER*/
+#footer{
+    position: relative;
+    float: inline-end;
+    height: 30px;
+    bottom: 0;
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: right;
+    font-size: x-small;
+    padding-right: 15px;
+}

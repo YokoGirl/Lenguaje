@@ -1,0 +1,37 @@
+body { margin: 0; height: 100%; background-color: white;}
+
+/*Valores predeterminados COLORES DE FONDOS*/
+.fondo-negro {background-color: black;}
+.fondo-amarillo {background-color: goldenrod;}
+.fondo-blanco {background-color: white;}
+
+
+
+#cabecera {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    line-height: 3em;
+}
+
+#logo {
+    width: 20%;
+}
+
+
+nav#menu {
+    float: left;
+    height: 1000px;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+div#cuerpo{
+    margin-left: 20%;
+    margin-right: 10%;
+    text-align: center;
+}

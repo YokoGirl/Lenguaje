@@ -1,0 +1,15 @@
+mezcla{
+    display: block;
+}
+
+mezcla[resultado="naranja"]{
+    background-color: orange;
+}
+
+mezcla[resultado="gris"]{
+    background-color: lightgray;
+}
+
+mezcla[resultado="verde claro"]{
+    background-color: lightgreen;
+}

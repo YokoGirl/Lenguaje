@@ -1,0 +1,26 @@
+.encabezado {
+    text-align: center;
+    padding-right: 30%;
+    padding-left: 1%;
+}
+
+.parrafo1 {
+    text-align: center;
+    padding-right: 30%;
+    padding-left: 1%;
+}
+
+h2, h3 {
+    padding-left: 1%;
+}
+
+.p2, .p3 {
+    text-align: justify; 
+    padding-right: 30%;
+    padding-left: 1%;
+}
+
+iframe{
+    padding-right: 30%;
+    padding-left: 1%;
+}

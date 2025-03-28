@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resultados>
+<!--Solucion Inicial-->
+    <ciudades>
+        <nombre>Nueva Delih</nombre>
+        <pais continente = "Asia">India</pais>
+    </ciudades>
+    <ciudades>
+        <nombre>Lisboa</nombre>
+        <pais continente = "Europa">Portugal</pais>
+    </ciudades>
+    <ciudades>
+        <nombre>El Cairo</nombre>
+        <pais continente = "África">Egipto</pais>
+    </ciudades>
+
+<!--Solucion Optimizada-->
+    <geografia>
+        <continentes>
+        
+            <!-- AFRICA -->        
+            <continente>
+                <nombre>Africa</nombre>
+                <paises>
+                    <pais>
+                        <nombre>Egipto</nombre>
+                        <ciudades>
+                            <ciudad>
+                                <nombre>El Cairo</nombre>
+                                <nhabitantes> </nhabitantes>
+                                <extension> </extension>
+                            </ciudad>
+                        </ciudades>
+                    </pais>
+                </paises>
+            </continente>
+
+            <!-- ASIA -->
+            <continente>
+                <nombre>Asia</nombre>
+                <paises>
+                     <pais>
+                        <nombre>Egipto</nombre>
+                        <ciudades>
+                            <ciudad>
+                                <nombre>El Cairo</nombre>
+                                <nhabitantes> </nhabitantes>
+                                <extension> </extension>
+                            </ciudad>
+                        </ciudades>
+                    </pais>
+                </paises>
+            </continente>
+
+            <!-- EUROPA -->
+            <continente>
+                <nombre>Europa</nombre>
+                <paises>
+                     <pais>
+                        <nombre>Egipto</nombre>
+                        <ciudades>
+                            <ciudad>
+                                <nombre>El Cairo</nombre>
+                                <nhabitantes> </nhabitantes>
+                                <extension> </extension>
+                            </ciudad>
+                        </ciudades>
+                    </pais>
+                </paises>
+            </continente>
+
+        </continentes>
+    </geografia>
+
+</resultados>

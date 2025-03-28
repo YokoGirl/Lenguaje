@@ -1,0 +1,26 @@
+/*Quitamos los estilos del menú (los puntos)*/
+ul {
+    list-style: none;
+}
+
+/*Hacemos que solo se vean los primeros "li"*/
+#nav ul {
+    display: none;
+}
+
+ul li {
+    width: 125px;
+    padding: 20px; /*Espacia la zona exterior del menú*/
+    margin-left: -36px; /*Quita el espacio a la izquierda*/
+    border-bottom: 1px solid black;
+    margin-right: 15px;
+}
+
+/*Quita el borde del ultimo */
+ul li:last-child {
+    border: 0;
+}
+
+#nav li:hover ul {
+    display: absolute;
+}

@@ -1,0 +1,139 @@
+/*Para empezar, sabemos que el css se aplica en función a la importancia
+de lo que llamamos "selectores". Su orden es tal que así:
+
+1) !important --> No se recomienda usarlo ya que una vez asignado no se le podrán
+                  hacer más cambios a ese estilo.
+2) #ID --> Se asigna un id tal que así: id="nombre_id"
+3) Estilos en línea --> Son los estilos que le das dentro del HTML a la linea que
+                        quieres modificar
+4) .Clases --> Se asigna una clase tal que así: class="nombre_class"
+5) <Elementos> --> Serían los elementos como <h1>, <p>, <div>, etc.
+6) Selector universal --> ??
+*/
+
+
+/*COMO LLAMAR A CADA ELEMENTO*/
+/* #ID */
+#llamada1 {
+    color: blueviolet;
+}
+
+/* Estilos en el HTML*/
+
+/* .class */
+.llamada2{
+    color: chartreuse;
+}
+
+/* <elementos> */
+p{
+    /*color: chartreuse;*/
+    /*Comentado para que en futuras ediciones no se aplique el estilo a todas las <p>*/
+}
+
+
+/*/////////////////////////////////////////////////////////////////////////////////*/
+                                /*TAMAÑOS DE TEXTO*/
+.tamaño1{
+    font-size: 25px;
+}
+
+.tamaño2{
+    font-size: 13px; /*Tamaño*/
+    font-family: 'Courier New', Courier, monospace; /*Tipografía*/
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+                                /*POSICIONES*/
+/*Las posiciones se utilizan para determinar donde irá posicionado un elemento en la página,
+tenemor varios tipos:
+    - Static --> Un elemento con position: static;no está posicionado de ninguna manera especial; 
+                 es siempre posicionada de acuerdo con el flujo normal de la página:
+    - Relative --> La configuración de las propiedades superior, derecha, inferior e izquierda
+                   de un elemento relativamente posicionado causará que se ajustara lejos de su posición normal. 
+    - Absolute --> Un elemento con position: absolute;se coloca en relación con el anterior posicionamiento más
+                   cercano. Sin embargo; si un elemento de posición absoluta no tiene posicionameintos anteriores,
+                   utiliza el cuerpo del documento, y se mueve junto con el desplazamiento de la página.
+    - Fixsed --> Un elemento con position: fixed; siempre se queda en el mismo lugar incluso si la página se desplaza.
+                 Esto se utiliza mucho cuando hacemos un menú y queremos que se quede estático siempre en la parte superior
+                 aunque el usuario haga scroll hacia abajo.
+    - Sticky  --> Un elemento con position: sticky;se coloca en función de la posición del desplazamiento del usuario.
+                  Es muy parecido al Fixed pero este se queda fijo en el momento en el que pasas por la zona del elemento.
+*/
+
+div.estatico {
+    position: static;
+    border: 3px solid #73AD21;
+  }
+
+div.relativo {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+  }
+
+div.absoluto{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}
+
+div.fijo{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+
+div.sticky{
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+}
+
+
+/*///////////////////////////////////////////////////////////////////////////////////*/
+                                /*FLOAT*/
+/*se utiliza para contenido de posicionamiento y formato, por ejemplo, dejar que una imagen flotante a la izquierda al texto
+en un contenedor. Posee varias propiedades como:
+    - left --> El elemento flota a la izquierda de su contenedor
+    - right --> El elemento flota a la derecha de su contenedor
+    - none --> El elemento no flota (se mostrará justo donde se produce en el texto). Esto es por defecto
+    - inherty --> El elemento hereda el valor flotador de su progenitor
+*/
+
+img.derecha {
+    float: right; 
+}
+
+img.izquierda {
+    float: left; 
+}
+
+img.none{
+    float: none;
+}
+
+div#float {
+    float: left;
+    padding: 15px; 
+}
+  
+.div1 {
+    background: red;
+}
+  
+.div2 {
+    background: yellow;
+}
+  
+  .div3 {
+    background: green;
+}

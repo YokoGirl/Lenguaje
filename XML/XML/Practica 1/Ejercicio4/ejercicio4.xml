@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="estilocss4.css" type="text/css"?>
+
+<mezclasColores>
+    <mezcla resultado = "naranja">rojo y amarillo</mezcla>
+    <mezcla resultado = "gris">negro y blanco</mezcla>
+    <mezcla resultado = "verde claro">amarillo, azul y blanco</mezcla>
+
+
+<!-- CORRECCIÓN -->
+<colores>
+    <mezcla resultado = "naranja">
+        <color>Rojo</color>
+        <color>Amarillo</color>
+    </mezcla>
+
+    <mezcla resultado = "gris">
+        <color>Negro</color>
+        <color>Blanco</color>
+    </mezcla>
+
+    <mezcla resultado = "verde claro">
+        <color>Amarillo</color>
+        <color>Azul</color>
+        <color>Blanco</color>
+    </mezcla>
+</colores>
+</mezclasColores>

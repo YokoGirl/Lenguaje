@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <form action="">
+        <h3>Texto</h3>
+        <label for="name">Nombre:</label>
+        <input type="text" id="name" name= "name" style="width: 32%;">
+
+        <h3>Radio Button</h3>
+        <input type="radio" name= "genero" value="Hombre">
+        <label for="Hombre">Hombre</label>
+        <br>
+        <input type="radio" name= "genero" value="Mujer">
+        <label for="Mujer">Mujer</label>
+        <br>
+        <input type="radio" name= "genero" value="Otro">
+        <label for="Otro">Otro</label>
+
+        <h3>Selector de opciones</h3>
+        <label for="coche">Marca de coche</label>
+        <select name="coche" id="coche">
+            <option value="volvo">Volvo</option>
+            <option value="Audi">Audi</option>
+            <option value="fiat">Nissan</option>
+            <option value="audi">Kia</option>
+        </select>
+
+        <h3>Área de Texto</h3>
+        <textarea name="mensage" rows="10" cols="80">Texto inicial dentro del campo</textarea>
+
+        <h3>Contraseña</h3>
+        Keyword: <input type="password" name="contraseña">
+        
+
+        <h3>Checkbox</h3>
+        <label for="vehículo">Elige cuál es tu vehículo</label>
+        <br><br>
+        <input type="checkbox" id="vehículo1" name="vehículo1" value="Bici">
+        <label for="vehículo1"> Tengo una bici </label>
+        <br>
+        <input type="checkbox" id="vehículo2" name="vehículo2" value="Coche">
+        <label for="vehicle2"> Tengo un coche </label>
+        <br>
+        <input type="checkbox" id="vehículo3" name="vehículo3" value="Moto">
+        <label for="vehículo3"> Tengo una moto</label>
+        <br>
+
+
+        <h3>Subida de archivo</h3>
+        <label for="miarchivo">Selecciona el/los archivo/s a subir:</label>
+        <input type="file" id="miarchivo" name="miarchivo">
+        <br><br>
+
+        <input type="submit" value="Enviar el formulario">
+        <br>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cinematografia">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="peliculas" minOccurs="0" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="actores" type="xs:string" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="duracion" type="xs:integer" minOccurs="0" maxOccurs="unbounded"></xs:element>
+                            <xs:element name="descripcion" type="xs:string" maxOccurs="unbounded"></xs:element>
+                            <xs:choice>
+                                <xs:element name="premios"></xs:element>
+                                <xs:element name="condecoraciones"></xs:element>
+                            </xs:choice>
+                        </xs:sequence>
+                    </xs:complexType>
+                
+                </xs:element>
+                <xs:element name="series" minOccurs="0" maxOccurs="unbounded">
+                
+                </xs:element>
+            
+            </xs:sequence>
+
+        </xs:complexType>
+    
+    
+    
+    
+    
+    
+    </xs:element>
+</xs:schema>

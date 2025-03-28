@@ -1,0 +1,57 @@
+ul {
+    list-style: none;
+}
+
+#nav ul {
+    display: none;
+}
+
+ul li {
+    width: 125px;
+    padding: 10px;
+    background-color: cadetblue;
+    text-align: center;
+    float: left;
+    border-right: 1px solid darkblue;
+    position: relative;
+}
+
+ul li:last-child{ 
+    border: none;
+}
+/*Sirve para modificar el ultimo elemento de la lista.
+En este caso dentro de la lista "ul" 
+el "li:last-child" (Mundiales) no tendrá borde.*/
+
+ul li:hover{
+    cursor: ne-resize;
+}
+/*Hover = momento donde se posiciona el raton por encima
+de un elemento.
+
+Como se va mostrar el cursor cuando esté encima de
+los "li"*/
+
+#nav li:hover ul {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 39px;
+    padding-left: 0;
+}
+
+#nav ul li {
+    float: none;
+    border-right: 0;
+    border-bottom: 1px dotted darkblue;
+}
+
+#nav li:hover ul li:last-child{
+    border-bottom: 0;
+
+}
+
+#nav li:hover ul li:first-child{
+    border-top: 1px solid orange;
+}
+

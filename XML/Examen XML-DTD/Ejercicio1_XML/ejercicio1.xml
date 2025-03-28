@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<señorDeLosAnillos>
+    <razas>
+        <!--HOBBITS-->
+        <raza>
+            <nombre>Hobbits</nombre>
+            <personajes>
+                <!--FRODO-->
+                <personaje codigo = "HOB_01_m-sdf">
+                    <nombre>Frodo Bolsón</nombre>
+                    <edad>33</edad>
+                    <lugaresVisitados>
+                    <lugar>Moria</lugar>
+                        <lugar>La Comarca</lugar>
+                        <lugar>Lothlórien</lugar>
+                        <lugar>Rivendel</lugar>
+                        <lugar>Bree</lugar>
+                        <lugar>Mordor</lugar>
+                        <lugar>Gondor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Aragorn</nombre>
+                            <tipo>Amigo</tipo>
+                            <tipo>Protector</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                        <relacion>
+                            <nombre>Gollum</nombre>
+                            <tipo>Rival</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+                <!--GOLLUM-->
+                <personaje codigo = "HOB_02_m-sdf654">
+                    <nombre>Gollum</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                    <lugar>Moria</lugar>
+                        <lugar>Montañas Nubladas</lugar>
+                        <lugar>Moria</lugar>
+                        <lugar>Mordor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Frodo Bolson</nombre>
+                            <tipo>Rival</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>No</destruirElAnillo>
+                        <poseerElAnillo>Porque es su tesoro</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+            </personajes>
+        </raza>
+
+        <!--MAIA-->
+        <raza>
+            <nombre>Maia</nombre>
+            <personajes>
+                <!--SAURON-->
+                <personaje codigo = "MAI_01_d-sr">
+                    <nombre>Sauron</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                        <lugar>Mordor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Saruman</nombre>
+                            <tipo>Aliado</tipo>
+                            <tipo>Servidor</tipo>
+                        </relacion>
+                        <relacion>
+                            <nombre>Gollum</nombre>
+                            <tipo>Rival</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>No</destruirElAnillo>
+                        <poseerElAnillo>Para dominarlos a todos</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+            </personajes>
+        </raza>
+
+        <!--HOMBRE-->
+        <raza>
+            <nombre>Hombre</nombre>
+            <personajes>
+                <!--ARAGORN-->
+                <personaje codigo = "HOM_01_m-sdflk">
+                    <nombre>Aragorn</nombre>
+                    <edad>87</edad>
+                    <lugaresVisitados>
+                        <lugar>Bree</lugar>
+                        <lugar>Rivendel</lugar>
+                        <lugar>Lothlórien</lugar>
+                        <lugar>Gondor</lugar>
+                        <lugar>Minas Tirith</lugar>
+                        <lugar>Mordor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Frodo Bolsón</nombre>
+                            <tipo>Protegido</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                        <relacion>
+                            <nombre>Arwen</nombre>
+                            <tipo>Pareja</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+                <!--FARAMIR-->
+                <personaje codigo = "HOM_02_m-crack">
+                    <nombre>Aragorn</nombre>
+                    <edad>87</edad>
+                    <lugaresVisitados>
+                        <lugar>Gondor</lugar>
+                        <lugar>Minas Tirith</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Frodo Bolsón</nombre>
+                            <tipo>Ayudante</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                        <relacion>
+                            <nombre>Gandalf</nombre>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+            </personajes>
+        </raza>
+
+        <!--ISTARI-->
+        <raza>
+            <nombre>Istari</nombre>
+            <personajes>
+                <!--Gandalf-->
+                <personaje codigo = "IST_01_m-s2">
+                    <nombre>Gandalf</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                        <lugar>Moria</lugar>
+                        <lugar>Rivendel</lugar>
+                        <lugar>Lothlórien</lugar>
+                        <lugar>Gondor</lugar>
+                        <lugar>Minas Tirith</lugar>
+                        <lugar>Mordor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Frodo Bolsón</nombre>
+                            <tipo>Guia</tipo>
+                            <tipo>Mentor</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                        <relacion>
+                            <nombre>Saruman</nombre>
+                            <tipo>Rival</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+                <!--SARUMAN-->
+                <personaje codigo = "IST_02_m-abc4a ">
+                    <nombre>Saruman</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                    <lugar>Moria</lugar>
+                        <lugar>Rivendel</lugar>
+                        <lugar>Lothlórien</lugar>
+                        <lugar>Isengard</lugar>
+                        <lugar>Minas Tirith</lugar>
+                        <lugar>Mordor</lugar>
+                        <lugar>Gondor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Gandalf</nombre>
+                            <tipo>Aliado</tipo>
+                            <tipo>Rival</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>No</destruirElAnillo>
+                        <poseerElAnillo>Para entregarselo a su señor</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+            </personajes>
+        </raza>
+
+        <!--ELFO-->
+        <raza>
+            <nombre>Elfo</nombre>
+            <personajes>
+                <!--Arwen-->
+                <personaje codigo = "ELF_01_f-bbb">
+                    <nombre>Arwen</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                        <lugar>Rivendel</lugar>
+                        <lugar>Lothlórien</lugar>
+                        <lugar>Gondor</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Aragorn</nombre>
+                            <tipo>Pareja</tipo>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+                <!--GALADIREL-->
+                <personaje codigo = "ELF_02_f-sdf2">
+                    <nombre>Galadriel</nombre>
+                    <edad>Desconocida</edad>
+                    <lugaresVisitados>
+                    <lugar>Moria</lugar>
+                        <lugar>Lothlórien</lugar>
+                    </lugaresVisitados>
+                    <relaciones>
+                        <relacion>
+                            <nombre>Gandalf</nombre>
+                            <tipo>Aliado</tipo>
+                        </relacion>
+                    </relaciones>
+                    <objetivo>
+                        <destruirElAnillo>Si</destruirElAnillo>
+                        <poseerElAnillo>No</poseerElAnillo>
+                    </objetivo>
+                </personaje>
+            </personajes>
+        </raza>
+
+    </razas>
+</señorDeLosAnillos>
